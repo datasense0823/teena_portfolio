@@ -9703,3 +9703,67 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* Testimonial Section */
+/* Testimonial Section */
+/* Testimonial Section */
+#testimonial-section {
+  background-color: #000; /* Matches your website's dark theme */
+  padding: 60px 0;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds spacing between cards */
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%; /* Ensures cards take full width on smaller screens */
+  max-width: 400px; /* Limits card width */
+}
+
+.testimonial-img {
+  width: 80px; /* Consistent image size */
+  height: 80px; /* Maintain aspect ratio */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures proper cropping of images */
+}
+
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #000;
+}
+
+.testimonial-card .title {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.testimonial-card .text {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive Fix for Smaller Screens */
+@media (max-width: 768px) {
+  .testimonial-container {
+    flex-direction: column; /* Stacks cards vertically on smaller screens */
+    align-items: center;
+    gap: 30px; /* Adds more spacing between stacked cards */
+  }
+
+  .testimonial-card {
+    max-width: none; /* Removes max-width constraint for smaller screens */
+    text-align: center;
+    padding: 20px;
+    box-shadow: none; /* Simplifies design for smaller devices */
+    border-radius: none; /* Removes rounded corners for minimalism */
+    width: auto;
+}
+

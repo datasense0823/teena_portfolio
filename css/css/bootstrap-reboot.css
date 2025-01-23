@@ -270,3 +270,108 @@ template {
 
 [hidden] {
   display: none !important; }
+
+  /* Testimonial Section */
+#testimonial-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.testimonial-card .title {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.testimonial-card .text {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Testimonial Section */
+#testimonial-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between cards */
+  justify-content: center; /* Centers the cards */
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.333% - 40px); /* Ensures three cards per row with spacing */
+  max-width: 300px; /* Prevents cards from getting too large */
+  text-align: center;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.testimonial-card .title {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.testimonial-card .text {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive Fix for Smaller Screens */
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: calc(50% - 20px); /* Two cards per row on tablets */
+    max-width: none; /* Removes max-width constraint */
+    margin-bottom: 20px; /* Adds space between rows */
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-card {
+    width: calc(100% - 20px); /* Single card per row on small screens */
+    margin-bottom: 20px; /* Adds space between rows */
+    padding: 15px; /* Adjusts padding for smaller screens */
+    text-align: center; /* Ensures alignment remains intact */
+    box-shadow: none; /* Simplifies design for smaller devices */
+    border-radius: none; /* Removes rounded corners for minimalism */
+}
